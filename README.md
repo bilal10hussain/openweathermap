@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## How to start this project
-Please note that you should have a valid API key from OpenWeatherMap. You can create an API key here: https://openweathermap.org/appid
+To get this project working, you should have a valid API key from OpenWeatherMap. You can create an API key here: https://openweathermap.org/appid
 
-After creating an account, you should make an `API_CONFIG.js` file in `/components/helpers/` which contains the API key and some other information. Here is my example:
+After creating an account, and getting an API key, you should create a file called `API_CONFIG.js` in `/components/helpers/` which contains the API key and some other information. Here is an example:
 ```
 const API_CONFIG = {
     "key": "API_KEY_GOES_HERE",
@@ -14,11 +14,11 @@ const API_CONFIG = {
 export default API_CONFIG;
 ```
 
-After configuring the API and some settings, you can start the project by doing so:
+After configuring the API and some settings, you can start the project by the following commands:
 
-a) `npm install` - to install all dependencies
+1) `npm install` - to install all dependencies
 
-b) `npm start` - to start the project @ localhost
+2) `npm start` - to start the project @ localhost
 
 
 
@@ -30,6 +30,8 @@ b) `npm start` - to start the project @ localhost
 * moment - for reformatting timestamps (e.g. in ux timestamp)
 * styled-components - for styling components
 * react-helmet - for creating user friendly title tags
+
+
 
 ## To do list
 * Writing tests

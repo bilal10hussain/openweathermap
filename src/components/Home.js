@@ -7,7 +7,10 @@ import Title, { Subtitle } from "./shared/Titles";
 const Home = () => {
     return (
         <MainContainer>
-            <Title>Hi! Welcome to the my Weather Open App</Title>
+            <Title>Hi! Welcome to my OpenWeatherMap App</Title>
+            <p>
+                This project displays the weather of my favourite cities.
+            </p>
             <p>
                 I have created this app to learn more about React and REST API's. Please feel free to comment about the code,
                 file structure, and whatever else could be improved.

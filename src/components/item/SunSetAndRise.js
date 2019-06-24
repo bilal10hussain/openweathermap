@@ -9,16 +9,12 @@ const Container = styled.div`
     margin: 30px 0;
 `;
 
-const SunRiseSet = props => {
-    const { sunrise, sunset } = props;
-
-    return (
+const SunRiseSet = ({sunrise, sunset}) => (
         <Container>
             <div>Sunrise: <Moment format="HH:mm" unix>{sunrise}</Moment></div>
             <div>Sunset: <Moment format="HH:mm" unix>{sunset}</Moment></div>
         </Container>
-    )
-};
+);
 
 SunRiseSet.propTypes = {
     sunrise: PropTypes.number,

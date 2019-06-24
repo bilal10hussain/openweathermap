@@ -14,8 +14,7 @@ const MainTemp = styled.div`
     text-align: center;
 `;
 
-const MainTemperature = props => {
-    const { mainTemp } = props;
+const MainTemperature = ({mainTemp}) => {
     const HAPPY_TEMP = 20;
     const checkHappy = mainTemp >= HAPPY_TEMP;
 

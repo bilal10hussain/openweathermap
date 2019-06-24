@@ -8,18 +8,16 @@ const Container = styled.div`
     margin: 30px 0;
 `;
 
-const Description = props => {
-    const weatherDescr = props.weatherDescr.map(weatherDescr => {
-        return (
-            <div key={weatherDescr.id}>
-                <div>{weatherDescr.main}</div>
-            </div>
-        )
-    });
+const Description = ({weatherDescr}) => {
+    const weatherDescription = weatherDescr.map(descr => (
+        <div key={descr.id}>
+            <div>{descr.main}</div>
+        </div>
+    ));
 
     return (
         <Container>
-            {weatherDescr}
+            {weatherDescription}
         </Container>
     )
 };

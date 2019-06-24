@@ -14,7 +14,7 @@ const CityName = styled.h1`
     flex-direction: column;
 `;
 
-const Header = props => {
+const Header = ({cityName, country}) => {
     const getFlag = country => {
         const baseUrl = `https://www.countryflags.io`;
         const iconStyle = 'flat';
@@ -23,8 +23,6 @@ const Header = props => {
 
         return `${baseUrl}/${country}/${iconStyle}/${iconSize}${iconExtension}`;
     };
-
-    const { cityName, country } = props;
 
     return (
         <Container>
@@ -35,7 +33,7 @@ const Header = props => {
             </CityName>
         </Container>
     )
-}
+};
 
 Header.propTypes = {
     cityName: PropTypes.string,

@@ -20,8 +20,7 @@ const TempRow = styled.div`
     }
 `;
 
-const Temperatures = props => {
-    const { tempMin, tempMax } = props;
+const Temperatures = ({tempMin, tempMax}) => {
     const roundedTempMin = Math.round(tempMin);
     const roundedTempMax = Math.round(tempMax);
 
